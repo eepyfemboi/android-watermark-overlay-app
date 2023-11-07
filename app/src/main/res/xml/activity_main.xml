@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Watermark Text -->
+    <EditText
+        android:id="@+id/editTextWatermarkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Watermark Text"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Watermark X Position -->
+    <EditText
+        android:id="@+id/editTextWatermarkX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWatermarkText"
+        android:layout_marginTop="10dp"
+        android:hint="X Position"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Watermark Y Position -->
+    <EditText
+        android:id="@+id/editTextWatermarkY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWatermarkX"
+        android:layout_marginTop="10dp"
+        android:hint="Y Position"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Set Watermark Button -->
+    <Button
+        android:id="@+id/btnSetWatermark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWatermarkY"
+        android:layout_marginTop="20dp"
+        android:text="Set Watermark"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Existing Button for Overlay -->
+    <Button
+        android:id="@+id/btnOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSetWatermark"
+        android:layout_marginTop="20dp"
+        android:text="Add Watermark Overlay"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
